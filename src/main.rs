@@ -14,7 +14,7 @@ fn switch(routes: Route) -> Html {
     match routes {
         Route::Home => html! {<Home/> },
         Route::Secure => html! {
-         <div>{"da"}</div>
+         <div calss={classes!(".navnav")}>{"da"}</div>
         },
         Route::NotFound => html! { <h1>{ "404" }</h1> },
     }
