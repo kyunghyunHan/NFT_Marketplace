@@ -23,8 +23,13 @@ fn switch(routes: Route) -> Html {
 /// App root
 #[function_component]
 fn App() -> Html {
+    let theme = Theme {
+        foreground: "yellow".to_string(),
+        background: "pink".to_owned(),
+    };
     html! {
-        <BrowserRouter>
+    <BrowserRouter>
+         <Navbar {theme} />
         <Switch<Route> render={switch} /> // <- must be child of <BrowserRouter>
     </BrowserRouter>
         
