@@ -1,34 +1,35 @@
+use yew::{html, Children, Component, Context, Html, Properties, function_component};
+mod components;
+use components::Navbar;
+use components::Theme;
+use yew::{classes};
+mod route;
+mod pages;
+use route::Route;
+use yew_router::prelude::*;
 use yew::prelude::*;
+use pages::Home;
 
-#[function_component(App)]
-fn app() -> Html {
-    html! {
-        <>
-            <h1>{ "RustConf Explorer" }</h1>
-            <div>
-                <h3>{"Videos to watch"}</h3>
-                <ul>
-                <li>{"dada"}</li>
-                <li>{"dada"}</li>
-                <li>{"dada"}</li>
-                <li>{"dada"}</li>
-                <li>{"dada"}</li>
-                <li>{"dada"}</li>
-                <li>{"dada"}</li>
-                </ul>
-                <p>{ "John Doe: Building and breaking things" }</p>
-                <p>{ "Jane Smith: The development process" }</p>
-                <p>{ "Matt Miller: The Web 7.0" }</p>
-                <p>{ "Tom Jerry: Mouseless development" }</p>
-            </div>
-            <div>
-                <h3>{ "John Doe: Building and breaking things" }</h3>
-                <img src="https://via.placeholder.com/640x360.png?text=Video+Player+Placeholder" alt="video thumbnail" />
-            </div>
-        </>
+fn switch(routes: Route) -> Html {
+    match routes {
+        Route::Home => html! {<Home/> },
+        Route::Secure => html! {
+         <div>{"da"}</div>
+        },
+        Route::NotFound => html! { <h1>{ "404" }</h1> },
     }
 }
 
+/// App root
+#[function_component]
+fn App() -> Html {
+    html! {
+        <BrowserRouter>
+        <Switch<Route> render={switch} /> // <- must be child of <BrowserRouter>
+    </BrowserRouter>
+        
+    }
+}
 fn main() {
     yew::Renderer::<App>::new().render();
 }

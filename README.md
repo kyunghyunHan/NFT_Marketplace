@@ -1,1 +1,5 @@
 # yew-app
+
+```
+trunk serve
+```
