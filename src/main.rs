@@ -1,6 +1,6 @@
 use yew::{html, Children, Component, Context, Html, Properties, function_component};
 mod components;
-use components::Navbar;
+use components::{Navbar,Footer};
 
 use yew::{classes};
 mod route;
@@ -30,8 +30,9 @@ fn App() -> Html {
    
     html! {
     <BrowserRouter>
-         <Navbar  />
-        <Switch<Route> render={switch} /> // <- must be child of <BrowserRouter>
+       <Navbar  />
+       <Switch<Route> render={switch} /> 
+       <Footer/>
     </BrowserRouter>
         
     }

@@ -9,7 +9,7 @@ pub fn navbar() -> Html {
    <div class="container-fluid">
        <nav class="navbar fixed-top navbar-expand-lg">
            <a href="#" class="navbar-brand">
-               <img class="logo" src="/assets/images/logo.png" alt="onex-logo"/>
+               <img class="logo" src="/assets/images/Tess.png" alt="onex-logo"/>
            </a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>

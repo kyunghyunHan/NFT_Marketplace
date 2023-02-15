@@ -1,8 +1,8 @@
 use yew::{html, Children, Component, Context, Html, Properties, function_component};
 
 
-#[function_component]
-pub fn FirstHome() -> Html {
+#[function_component(Randing)]
+pub fn randing() -> Html {
     html! {
    <>
    <div class="row">

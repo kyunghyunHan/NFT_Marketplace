@@ -1,7 +1,8 @@
-mod navbar;
+mod Layout;
 mod card;
 mod HomeComponent;
-pub use navbar::Navbar;
+pub use Layout::{Navbar,Footer};
 pub use card::Card;
-pub use HomeComponent::FirstHome;
+pub use HomeComponent::Randing;
 pub use HomeComponent::Collections;
+pub use HomeComponent::Creators;
