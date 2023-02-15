@@ -6,7 +6,6 @@ use yew::{html, Children, Component, Context, Html, Properties, function_compone
 pub fn card() -> Html {
     html! {
    <>
-   
    <article class="card">
      <a class="item__img__container" href="#">
        <img class="item__img" src="https://kellychi22.github.io/frontend-mentor-solutions/04-nft-preview-card-component/images/image-equilibrium.jpg" alt="equilibrium-item-image"/>
