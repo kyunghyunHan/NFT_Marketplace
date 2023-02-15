@@ -8,7 +8,7 @@ pub fn navbar() -> Html {
    <section id="hero-section">
    <div class="container-fluid">
        <nav class="navbar fixed-top navbar-expand-lg">
-           <a href="#" class="navbar-brand">
+           <a href="/" class="navbar-brand">
                <img class="logo" src="/assets/images/Tess.png" alt="onex-logo"/>
            </a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,11 +17,9 @@ pub fn navbar() -> Html {
 
            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  
                    <li class="nav-item">
-                       <a href="index.html" class="home nav-link">{"Home"}</a>
-                   </li>
-                   <li class="nav-item">
-                       <a href="#creators" class="nav-link">{"Creators"}</a>
+                       <a href="/marketplace" class="nav-link">{"Marketplace"}</a>
                    </li>
                    <li class="nav-item">
                        <a href="#collections" class="nav-link">{"Collections"}</a>

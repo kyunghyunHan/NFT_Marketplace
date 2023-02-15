@@ -9,7 +9,7 @@ pub fn creators() -> Html {
    <div class="row">
        <h2 class="creator-heading">{"Follow Top Creators"}</h2>
        <div class="creator-div col-lg-5 col-md-4">
-           <img class="creator-img" src="/assets/images/creator1.png" alt=""/>
+           <img class="creator-img" src="/assets/images/사람1.jpeg" alt=""/>
            <h6 class="creator-tag">{"Creator"}</h6>
            <p class="creator-name">{"Nelson Jeff"}</p>
            <a class="follow-btn" href="">{"Follow"}</a>

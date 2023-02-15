@@ -6,8 +6,8 @@ use yew::prelude::*;
 pub enum Route {
     #[at("/")]
     Home,
-    #[at("/secure")]
-    Secure,
+    #[at("/marketplace")]
+    Marketplace,
     #[at("/card")]
     Card,
     #[not_found]

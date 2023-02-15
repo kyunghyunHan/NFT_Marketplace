@@ -12,9 +12,8 @@ pub fn randing() -> Html {
        <a href="#" class="explore-btn btn btn-primary">{"Explore"}</a>
        <a href="#" class="create-btn btn btn-outline-primary">{"Create"}</a>
    </div>
-
    <div class="col-lg-6">
-       <img class="hero-img" src="/assets/images/hero-img.png" alt=""/>
+       <img class="hero-img" src="/assets/images/랜딩.jpeg" alt=""/>
    </div>
    </div>
  </>

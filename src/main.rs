@@ -7,14 +7,13 @@ mod route;
 mod pages;
 use route::Route;
 use yew_router::prelude::*;
-use yew::prelude::*;
 use pages::Home;
 use components::Card;
 
 fn switch(routes: Route) -> Html {
     match routes {
         Route::Home => html! {<Home/> },
-        Route::Secure => html! {
+        Route::Marketplace => html! {
          <div calss={classes!(".navnav")}>{"da"}</div>
         },
         Route::Card => html! {
