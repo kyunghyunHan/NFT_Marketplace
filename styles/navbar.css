@@ -42,9 +42,10 @@
 }
 
 .sign-in {
-  padding: 8px 30px;
+  padding: 8px 20px;
   border-radius: 7px;
   background-color: #5d60ef;
+  right: 10px;
 }
 
 /* Hero Section */
