@@ -1,3 +1,5 @@
 mod navbar;
+mod card;
 pub use navbar::Navbar;
-pub use navbar::Theme;
+
+pub use card::Card;

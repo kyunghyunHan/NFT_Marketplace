@@ -8,6 +8,8 @@ pub enum Route {
     Home,
     #[at("/secure")]
     Secure,
+    #[at("/card")]
+    Card,
     #[not_found]
     #[at("/404")]
     NotFound,
