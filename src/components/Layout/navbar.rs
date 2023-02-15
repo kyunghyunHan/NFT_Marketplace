@@ -17,16 +17,16 @@ pub fn navbar() -> Html {
 
            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  
+               <li class="nav-item">
+               <a href="/about" class="nav-link">{"About"}</a>
+                </li> 
                    <li class="nav-item">
                        <a href="/marketplace" class="nav-link">{"Marketplace"}</a>
                    </li>
                    <li class="nav-item">
-                       <a href="#collections" class="nav-link">{"Collections"}</a>
+                       <a href="/card" class="nav-link">{"Card"}</a>
                    </li>
-                   <li class="nav-item">
-                       <a href="#" class="nav-link">{"About"}</a>
-                   </li>
+                 
                </ul>
                <div class="sign-in-btn ms-auto">
                    <a href="" class="sign-in btn btn-primary">{"Sign In"}</a>
